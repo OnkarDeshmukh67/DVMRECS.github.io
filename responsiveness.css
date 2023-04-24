@@ -89,6 +89,12 @@
   .filter-result{
     padding-top: 50px;
   }
+   .search-container{
+    height: 450px;
+  }
+   .filter-sections{
+    padding-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 1230px){
@@ -97,12 +103,6 @@
   }
   .filter-title i{
     display: none;
-  }
-   .search-container{
-    height: 450px;
-  }
-   .filter-sections{
-    padding-bottom: 40px;
   }
 }
 
