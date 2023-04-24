@@ -292,7 +292,7 @@ State.addEventListener('input', function (event) {
    
     let stateValue = event.target.value;
         
-         const place = 'locationAPI.json'
+         const place = 'dvm.json'
          let Countryname;
    
          fetch(place)
