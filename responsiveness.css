@@ -1,0 +1,117 @@
+/* RESPONSIVENESS OF THE CARDS STARTS HERE */
+
+@media screen and (max-width: 340px){
+  .image-part{
+    height: 30%;
+  }
+
+  .image-part img{
+    display: none;
+  }
+
+  .job-tag{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 205px){
+  .job-template{
+    height: 60vh;
+  }
+}
+
+/* RESPONSIVENESS OF THE CARDS ENDS HERE */
+
+
+
+@media screen and (max-width: 170px){
+  .top-container{
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .logo img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .navigation{
+   height: 10rem;
+  }
+  .site-name{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px){
+  .navigation{
+   height: 20rem;
+  }
+  .site-name{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .site-name{
+    right: 60%;
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .navigation{
+   height: 40rem;
+  }
+  .site-name{
+    display: none;
+  }
+}
+@media screen and (max-width: 290px){
+  .navigation{
+   height: 100rem;
+  }
+}
+
+/* HERE STARTS THE FILTER BOX STYLING*/
+
+
+@media screen and (max-width: 1130px){
+
+  .filter-sections{
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-container{
+    height: 350px;
+  }
+  .filter-result{
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1230px){
+  .three-boxes i{
+    display: none;
+  }
+  .filter-title i{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .search-container{
+    height: 400px;
+    margin: auto;
+  }
+  .filter-title p{
+    padding-top: 30px;
+  }
+  .bun{
+   margin-left: 42vw;
+  }
+}
+
+
+/* HERE ENDS THE FILTER BOX STYLING*/

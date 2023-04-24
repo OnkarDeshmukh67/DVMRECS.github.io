@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Web App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsiveness.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon.ico">
+<!-- <link rel="manifest" href="favicon_io/favicon.ico"> -->
+</head>
+<body>
+
+
+  <!-- HERE STARTS THE FILTER PAGE -->
+  <div class="hamburger" id="hamburger">
+
+    <div id="bun" class="bun" onclick="OnClick()">
+      <div class="bar" id="bar1"></div>
+      <div class="bar" id="bar2"></div>
+      <div class="bar" id="bar3"></div>
+    </div>
+
+  </div>
+
+  <div class="search-container" id="search-container">
+
+    <div class="filter-title">
+
+      <p class="filters">Filter your search for better navigation</p>
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+    </div>
+
+    <div class="filter-sections">
+      
+      <div class="three-boxes" id="search-D">
+      <input type="text" id="job" placeholder="Enter a job name or keyword"><span id="jobsp"></span>
+      <i class="fa-solid fa-money-bill"></i>
+      </div>
+
+      <div class="three-boxes" id="search-A">
+      <input id="country" placeholder="Country"><span id="consp"></span>
+      <i class="fa-solid fa-globe icons"></i>
+      </div>
+
+      <div class="three-boxes" id="searh-B">
+      <input id="state" placeholder="Enter a state name or keyword"><span id="stasp"></span>
+      <i class="fa-solid fa-earth-asia icons"></i>
+      </div>
+
+      <div class="three-boxes" id="search-C">
+      <select name="" id="time">
+        <option value="ALL">ALL</option>
+        <option value="FULL-TIME">FULL-TIME</option>
+        <option value="PART-TIME">PART-TIME</option>
+      </select>
+      <i class="fa-regular fa-clock icons"></i>
+      </div> 
+    </div>
+
+    <div class="filter-result">
+      <button id="filterSearch" type="submit">Filter</button>
+    </div>
+  </div>
+
+
+
+  <!-- HERE ENDS THE FILTER PAGE -->
+
+
+
+
+
+  <div class="top-container">
+
+
+
+    <div class="navigation">
+
+    <div class="nav-bar">
+
+    <ul>
+      <li  class="navtools"><a href="#">About</a></li>
+      <li  class="navtools"><a href="#">Gallery</a></li>
+      <li  class="navtools"><a href="#">Contact Us</a></li>
+      <li  class="user-id"><a href="#">Sign Up</a></li>
+      <li  class="user-id"><a href="#">Login</a></li>
+    </ul>
+
+    </div>
+    
+  </div>
+
+  <div class="searchbar">
+
+    <div class="logo">
+
+      <img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGpvYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+
+    </div>
+
+    <div class="site-name">
+      <p>Placement en CG</p>
+    </div>
+
+    <div class="search">
+
+
+
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+  <!-- THE SECTION OF CARDS TO BE DISPLAYED STARTS HERE -->
+
+<div class="display-jobs">
+  
+  <div class="job-template" id="CSE-A">
+    <div class="image-part">
+      <img src="https://plus.unsplash.com/premium_photo-1661962317954-a9eeba7c4706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+      <p class="job-tag"><a href="#">CSE A</a></p>
+    </div>
+    <div class="about-part">
+      <table>
+  <tr>
+    <td>Role: CSE A</td>
+    <td class="right-column">State: Maharashtra</td>
+  </tr>
+  <tr>
+    <td>Company Name: Zoto</td>
+    <td class="right-column">Country: India</td>
+  </tr>
+  <tr>
+    <td>Salary: Negotiable </td>
+    <td class="right-column">Job-nature: Full-time</td>
+  </tr>
+</table>
+
+</div>
+</div>
+
+<div class="job-template" id="CSE-B">
+      <div class="image-part">
+        <img src="https://plus.unsplash.com/premium_photo-1661900821877-e0f5277a9d65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+        <p class="job-tag"><a href="#">CSE B</a></p>
+      </div>
+      <div class="about-part">
+        <table>
+          <tr>
+            <td>Role: CSE B</td>
+            <td class="right-column">State: Bretagne</td>
+          </tr>
+          <tr>
+            <td>Company Name: Harper</td>
+            <td class="right-column">Country: France</td>
+          </tr>
+          <tr>
+            <td>Salary: Negotiable </td>
+            <td class="right-column">Job-nature: Part-time</td>
+          </tr>
+          
+        </table>
+      </div>
+</div>
+    
+<div class="job-template" id="CSE-C">
+      <div class="image-part">
+        <img src="https://plus.unsplash.com/premium_photo-1661900821877-e0f5277a9d65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+        <p class="job-tag"><a href="#">CSE C</a></p>
+      </div>
+      <div class="about-part">
+        <table>
+          <tr>
+            <td>Role: CSE C</td>
+            <td class="right-column">State: Haryana</td>
+          </tr>
+  <tr>
+    <td>Company Name: Harper</td>
+    <td class="right-column">Country: India</td>
+  </tr>
+  <tr>
+    <td>Salary: Negotiable </td>
+    <td class="right-column">Job-nature: Full-time</td>
+  </tr>
+  
+</table>
+</div>
+</div>
+
+<div class="job-template" id="CSE-D">
+  <div class="image-part">
+    <img src="https://plus.unsplash.com/premium_photo-1661962317954-a9eeba7c4706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+    <p class="job-tag"><a href="#">CSE D</a></p>
+  </div>
+  <div class="about-part">
+    <table>
+      <tr>
+        <td>Role: CSE D</td>
+        <td class="right-column">State: Arizona</td>
+      </tr>
+      <tr>
+        <td>Company Name: Zoto</td>
+        <td class="right-column">Country: US</td>
+      </tr>
+      <tr>
+        <td>Salary: Negotiable </td>
+        <td class="right-column">Job-nature: Part-time</td>
+      </tr>
+      
+    </table>
+  </div>
+</div>
+
+<div class="job-template" id="CSE-E">
+  <div class="image-part">
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+    <p class="job-tag"><a href="#">CSE E</a></p>
+  </div>
+  <div class="about-part">
+    <table>
+      <tr>
+    <td>Role: CSE E</td>
+    <td class="right-column">State: Maharashtra</td>
+  </tr>
+  <tr>
+    <td>Company Name: Keven</td>
+    <td class="right-column">Country: India</td>
+  </tr>
+  <tr>
+    <td>Salary: Negotiable </td>
+    <td class="right-column">Job-nature: Full-time</td>
+  </tr>
+  
+</table>
+</div>
+</div>
+
+<div class="job-template" id="ME-A">
+  <div class="image-part">
+    <img src="https://plus.unsplash.com/premium_photo-1661962317954-a9eeba7c4706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+    <p class="job-tag"><a href="#">ME A</a></p>
+  </div>
+  <div class="about-part">
+    <table>
+      <tr>
+        <td>Role: ME A</td>
+        <td class="right-column">State:  Bretagne</td>
+      </tr>
+      <tr>
+        <td>Company Name: Zoto</td>
+        <td class="right-column">Country: France</td>
+      </tr>
+      <tr>
+        <td>Salary: Negotiable </td>
+        <td class="right-column">Job-nature: Part-time</td>
+      </tr>
+      
+    </table>
+  </div>
+</div>
+
+<div class="job-template" id="ME-B">
+  <div class="image-part">
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+    <p class="job-tag"><a href="#">ME B</a></p>
+  </div>
+  <div class="about-part">
+    <table>
+      <tr>
+        <td>Role: ME B</td>
+        <td class="right-column">State: Haryana</td>
+      </tr>
+      <tr>
+        <td>Company Name: Keven</td>
+        <td class="right-column">Country: India</td>
+      </tr>
+      <tr>
+        <td>Salary: Negotiable </td>
+        <td class="right-column">Job-nature: Part-time</td>
+      </tr>
+      
+    </table>
+  </div>
+</div>
+
+<div class="job-template" id="ME-C">
+  <div class="image-part">
+    <img src="https://plus.unsplash.com/premium_photo-1661962317954-a9eeba7c4706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+    <p class="job-tag"><a href="#">ME C</a></p>
+    </div>
+    <div class="about-part">
+      <table>
+        <tr>
+          <td>Role: ME C</td>
+          <td class="right-column">State: Corse</td>
+        </tr>
+        <tr>
+          <td>Company Name: Zoto</td>
+          <td class="right-column">Country: France</td>
+        </tr>
+        <tr>
+          <td>Salary: Negotiable </td>
+          <td class="right-column">Job-nature: Full-time</td>
+        </tr>
+        
+      </table>
+    </div>
+</div>
+  
+<div class="job-template" id="ME-D">
+    <div class="image-part">
+      <img src="https://plus.unsplash.com/premium_photo-1661900821877-e0f5277a9d65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+      <p class="job-tag"><a href="#">ME D</a></p>
+    </div>
+    <div class="about-part">
+      <table>
+        <tr>
+          <td>Role: ME D</td>
+          <td class="right-column">State: Indiana</td>
+        </tr>
+        <tr>
+          <td>Company Name: Harper</td>
+          <td class="right-column">Country: US</td>
+        </tr>
+        <tr>
+          <td>Salary: Negotiable </td>
+          <td class="right-column">Job-nature: Part-time</td>
+        </tr>
+        
+      </table>
+    </div>
+</div>
+  
+<div class="job-template" id="ME-E">
+    <div class="image-part">
+      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+      <p class="job-tag"><a href="#">ME E</a></p>
+    </div>
+    <div class="about-part">
+      <table>
+        <tr>
+          <td>Role: ME E</td>
+          <td class="right-column">State: Haryana</td>
+        </tr>
+        <tr>
+          <td>Company Name: Keven</td>
+          <td class="right-column">Country: India</td>
+        </tr>
+        <tr>
+          <td>Salary: Negotiable </td>
+          <td class="right-column">Job-nature: Full-time</td>
+        </tr>
+        
+      </table>
+    </div>
+</div>
+  
+<div class="job-template" id="CE-A">
+    <div class="image-part">
+      <img src="https://plus.unsplash.com/premium_photo-1661962317954-a9eeba7c4706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+      <p class="job-tag"><a href="#">CE A</a></p>
+    </div>
+    <div class="about-part">
+      <table>
+        <tr>
+          <td>Role: CE A</td>
+          <td class="right-column">State: Arizona</td>
+        </tr>
+        <tr>
+          <td>Company Name: Zoto</td>
+          <td class="right-column">Country: US</td>
+        </tr>
+        <tr>
+    <td>Salary: Negotiable </td>
+    <td class="right-column">Job-nature: Part-time</td>
+  </tr>
+  
+</table>
+</div>
+</div>
+
+<div class="job-template" id="CE-B">
+  <div class="image-part">
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+    <p class="job-tag"><a href="#">CE B</a></p>
+  </div>
+  <div class="about-part">
+    <table>
+      <tr>
+        <td>Role: CE B</td>
+        <td class="right-column">State: Indiana</td>
+      </tr>
+      <tr>
+        <td>Company Name: Keven</td>
+        <td class="right-column">Country: US</td>
+      </tr>
+      <tr>
+        <td>Salary: Negotiable </td>
+        <td class="right-column">Job-nature: Part-time</td>
+      </tr>
+      
+    </table>
+  </div>
+</div>
+
+<div class="job-template" id="CE-C">
+  <div class="image-part">
+    <img src="https://plus.unsplash.com/premium_photo-1661900821877-e0f5277a9d65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+    <p class="job-tag"><a href="#">CE C</a></p>
+  </div>
+  <div class="about-part">
+    <table>
+      <tr>
+        <td>Role: CE C</td>
+        <td class="right-column">State: Arizona</td>
+  </tr>
+  <tr>
+    <td>Company Name: Harper</td>
+    <td class="right-column">Country: US</td>
+  </tr>
+  <tr>
+    <td>Salary: Negotiable </td>
+    <td class="right-column">Job-nature: Full-time</td>
+  </tr>
+  
+</table>
+</div>
+</div>
+
+<div class="job-template" id="CE-D">
+  <div class="image-part">
+    <img src="https://plus.unsplash.com/premium_photo-1661900821877-e0f5277a9d65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+    <p class="job-tag"><a href="#">CE D</a></p>
+  </div>
+  <div class="about-part">
+    <table>
+      <tr>
+        <td>Role: CE D</td>
+        <td class="right-column">State: Corse</td>
+      </tr>
+      <tr>
+        <td>Company Name: Harper</td>
+        <td class="right-column">Country: France</td>
+      </tr>
+      <tr>
+        <td>Salary: Negotiable </td>
+        <td class="right-column">Job-nature: Full-time</td>
+      </tr>
+      
+    </table>
+  </div>
+</div>
+
+<div class="job-template" id="CE-E">
+  <div class="image-part">
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+    <p class="job-tag"><a href="#">CE E</a></p>
+  </div>
+  <div class="about-part">
+    <table>
+      <tr>
+        <td>Role: CE E</td>
+        <td class="right-column">State: Bretagne</td>
+      </tr>
+      <tr>
+        <td>Company Name: Keven</td>
+        <td class="right-column">Country: France</td>
+      </tr>
+      <tr>
+        <td>Salary: Negotiable </td>
+        <td class="right-column">Job-nature: Part-time</td>
+      </tr>
+      
+    </table>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<!-- THE SECTION OF CARDS TO BE DISPLAYED ENDS HERE -->
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
